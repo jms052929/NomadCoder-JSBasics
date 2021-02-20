@@ -1,0 +1,11 @@
+git add *
+-> git 스테이지에 올린다
+
+git status
+-> 지금 진행중인 파일을 확인
+
+git commit -m "메세지"
+-> 스테이지에 올린것을 커밋한다
+
+git push
+-> github로 푸쉬한다
