@@ -2,14 +2,40 @@
   <head>
     <title>Web1-html</title>
     <meta charset="utf-8">
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBF6MLZZLS"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+		
+
+	  gtag('config', 'G-ZBF6MLZZLS');
+	</script>
+	<style>
+		#active {
+			color:red;
+		}
+		.saw {
+			color:gray;
+		}
+		a {
+			text-decoration: none;
+			color:black;
+		}	
+		h1 { 
+			font-size: 50px;
+			text-align: center;
+		}
+	</style>
   </head>
 
   <body>
     <h1><a href="index.html">Gurume</a></h1>
 
     <ol>
-      <li><a href="1.html">TOK에 대한 모든 것</a></li>
-      <li><a href="2.html">IB경영에 대한 모든 것</a></li>
+      <li><a href="1.html"class="saw">TOK에 대한 모든 것</a></li>
+      <li><a href="2.html"class="saw" id="active">IB경영에 대한 모든 것</a></li>
       <li><a href="3.html">IB IA 조언</a></li>
     </ol>
 
