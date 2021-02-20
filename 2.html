@@ -13,11 +13,8 @@
 	  gtag('config', 'G-ZBF6MLZZLS');
 	</script>
 	<style>
-		#active {
-			color:red;
-		}
-		.saw {
-			color:gray;
+		body {
+			margin:0px;
 		}
 		a {
 			text-decoration: none;
@@ -26,24 +23,48 @@
 		h1 { 
 			font-size: 50px;
 			text-align: center;
+			border-bottom:1px solid gray;
+			padding:20px;
+			margin:0;
+		}
+
+		#grid{
+			display:grid;
+			grid-template-columns:150px 1fr;
+		}
+		ol{
+			border-right:1px solid gray;
+			width:200px;
+			margin:0;
+			padding:50px;
+		}
+		#grid ol{
+			padding-right:10px;
+		}
+		#grid #article{
+			padding-left: 183px;
+  			padding-top: 25px;
 		}
 	</style>
   </head>
 
   <body>
-    <h1><a href="index.html">Gurume</a></h1>
+    <h1><a href="index.html" style="color:skyblue">Gurume</a></h1>
+    <div id="grid">
+		<ol>
+		  <li><a href="1.html">TOK에 대한 모든 것</a></li>
+		  <li><a href="2.html">IB경영에 대한 모든 것</a></li>
+		  <li><a href="3.html">IB IA 조언</a></li>
+		</ol>
+		<div id="article">
+			<h2>IB경영에 대한 모든 것</h2>
+			<p>
+		  “IB Business management에서는 business의 기능, 경영의 과정, 그리고 현대 기업의 의사결정과정 등을 공부합니다. 이 과정에서 Business 내의 의사결정이 어떻게 내부적, 외부적 요인들에 따라 기업에 영향을 끼치는지에 대해 시험합니다. 또한, 이 의사결정들이 어떻게 내부 관계자와 외부 관계자들에게 영향을 끼치는지에 대해 공부합니다. Business management는 또한 개인과 그룹이 기업 내에서 어떻게 상호작용을 하는지, 어떻게 사람들이 성공적으로 기업을 관리하는지, 더 나아가서 자원 부족 문제와 이의 지속 가능성 이슈가 대두되고 있는 현시대에서 어떻게 윤리적으로 자원을 효율적으로 사용하는지에 대해서도 공부합니다. "따라서 Business mangament는 개인의 특성과 현대의 학문에 완벽하게 정착된 과목입니다: 학생이 개성과 집단의 목표에 대한 인식 발전에 목표를 둡니다."(IB Business Management Guide, 2014)
 
-    <ol>
-      <li><a href="1.html"class="saw">TOK에 대한 모든 것</a></li>
-      <li><a href="2.html"class="saw" id="active">IB경영에 대한 모든 것</a></li>
-      <li><a href="3.html">IB IA 조언</a></li>
-    </ol>
+			</p>		
+  	</div>	
+	  </div>
+	  
 
-
-    <h2>About Gurume</h2>
-    <p>
-      “IB Business management에서는 business의 기능, 경영의 과정, 그리고 현대 기업의 의사결정과정 등을 공부합니다. 이 과정에서 Business 내의 의사결정이 어떻게 내부적, 외부적 요인들에 따라 기업에 영향을 끼치는지에 대해 시험합니다. 또한, 이 의사결정들이 어떻게 내부 관계자와 외부 관계자들에게 영향을 끼치는지에 대해 공부합니다. Business management는 또한 개인과 그룹이 기업 내에서 어떻게 상호작용을 하는지, 어떻게 사람들이 성공적으로 기업을 관리하는지, 더 나아가서 자원 부족 문제와 이의 지속 가능성 이슈가 대두되고 있는 현시대에서 어떻게 윤리적으로 자원을 효율적으로 사용하는지에 대해서도 공부합니다. "따라서 Business mangament는 개인의 특성과 현대의 학문에 완벽하게 정착된 과목입니다: 학생이 개성과 집단의 목표에 대한 인식 발전에 목표를 둡니다."(IB Business Management Guide, 2014)
-      [출처] IB Business Management 과목 소개|작성자 그루미
-    </p>
   </body>
 </html>
