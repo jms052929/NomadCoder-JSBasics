@@ -1,74 +1,58 @@
 <html>
-  <head>
-    <title>Web1-html</title>
-    <meta charset="utf-8">
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBF6MLZZLS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<head>
+		<title>Web1-html</title>
+		<meta charset="utf-8" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBF6MLZZLS"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-  gtag('config', 'G-ZBF6MLZZLS');
-</script>
-  </head>
+			gtag('config', 'G-ZBF6MLZZLS');
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+		<script src="color.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-  <body>
-    <h1><a href="index.html">Gurume</a></h1>
+	<body>
+		<h1><a href="index.html" style="color: skyblue;">Gurume</a></h1>
+		<input
+			id="night_day"
+			type="button"
+			value="night"
+			onclick="
+			nightDayHandler(this);
+		"
+		/>
 
-    <ol>
-      <li><a href="1.html">TOK에 대한 모든 것</a></li>
-      <li><a href="2.html">IB경영에 대한 모든 것</a></li>
-      <li><a href="3.html">IB IA 조언</a></li>
-    </ol>
-
-
-    <h2>TOK에 대한 모든 것</h2>
-    <p>
-      asdasdToK (Theory of Knowledge)는 Extended Essay 와 더불어 IB가 가지고있는 독자적인 교육 방침입니다. 보통 ToK를 철학이라고 많이들 생각하시겠지만, 정확히 말하자면 철학보다는 철학의 한 부분인 인식론(Epistemology)으로 이해하는 것이 가장 적합합니다. 인식론이란, 지식이 무엇이며 어떻게 진화하는지를 탐구하는 학문이라 할 수 있습니다. 그럼 IB는 왜 이런 독특한 과목을 교과 과정에 포함했을까요?
-
-      ToK은 학생들에게 지식이 어떻게 발전하고 진화하는지 그 과정을 면밀히 이해할 수 있게 도와줍니다. 이는 학생들이 IB를 통해서 배우는 여러 과목들을 융합하여 한 발짝 물러서서 바라볼 수 있는 시야를 제공하고, 학생들로 하여금 지식은 정해진 것이 아닌 수시로 성장하는 것이라는 태도를 정립해주는 것이기도 합니다.
-      [출처] IB ToK에 대한 모든 것 : 에세이|작성자 그루미
-    </p>
-
-	 <p>
-		 <div id="disqus_thread"></div>
-<script>
-    /**
-		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-		/*
-		var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-1-6qo2xkynzk.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	</p>
-	
-	
-	<p>
-		<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6030b798918aa2612740c3f4/1euv4qb08';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-	</p>
-	
-  </body>
+		<div id="grid">
+			<ol>
+				<li><a href="1.html">TOK에 대한 모든 것</a></li>
+				<li><a href="2.html">IB경영에 대한 모든 것</a></li>
+				<li><a href="3.html">IB IA 조언</a></li>
+			</ol>
+			<div id="article">
+				<h2>TOK에 대한 모든 것</h2>
+				<p>
+					ToK (Theory of Knowledge)는 Extended Essay 와 더불어 IB가 가지고있는 독자적인 교육
+					방침입니다. 보통 ToK를 철학이라고 많이들 생각하시겠지만, 정확히 말하자면 철학보다는 철학의
+					한 부분인 인식론(Epistemology)으로 이해하는 것이 가장 적합합니다. 인식론이란, 지식이
+					무엇이며 어떻게 진화하는지를 탐구하는 학문이라 할 수 있습니다. 그럼 IB는 왜 이런 독특한
+					과목을 교과 과정에 포함했을까요? ToK은 학생들에게 지식이 어떻게 발전하고 진화하는지 그
+					과정을 면밀히 이해할 수 있게 도와줍니다. 이는 학생들이 IB를 통해서 배우는 여러 과목들을
+					융합하여 한 발짝 물러서서 바라볼 수 있는 시야를 제공하고, 학생들로 하여금 지식은 정해진
+					것이 아닌 수시로 성장하는 것이라는 태도를 정립해주는 것이기도 합니다. [출처] IB ToK에 대한
+					모든 것 : 에세이|작성자 그루미
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
